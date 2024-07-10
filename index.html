@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>한국 여행 가이드 - 10516 이상진</title>
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    .navbar-brand {
+      font-size: 24px; /* 폰트 사이즈 조정 */
+      font-weight: bold; /* 폰트 굵기 조정 */
+    }
+    body {
+      font-family: 'Arial', sans-serif;
+      line-height: 1.6;
+    }
+    .navbar {
+      margin-bottom: 30px;
+    }
+    .section {
+      padding: 60px 0;
+    }
+    .bg-light {
+      background-color: pink !important;
+    }
+    .bg-primary {
+      background-color: black !important;
+      color: white;
+    }
+    .bg-secondary {
+      background-color: red !important;
+      color: white;
+    }
+    .bg-success {
+      background-color: blue !important;
+      color: white;
+    }
+    .bg-info {
+      background-color: white !important;
+      color: black;
+    }
+    h2 {
+      margin-bottom: 30px;
+    }
+    .carousel-inner img,
+    .attraction-item img {
+      width: 100%;
+      height: auto;
+    }
+    .modal-body img {
+      max-width: 100%;
+      height: auto;
+    }
+    footer {
+      background-color: #f8f9fa;
+      padding: 20px 0;
+    }
+    .attraction-item {
+      margin-bottom: 30px;
+      text-align: center;
+    }
+    .btn-details {
+      font-size: 12px;
+      padding: 5px 10px;
+    }
+    iframe {
+      max-width: 100%;
+    }
+  </style>
+</head>
+<body>
+  <!-- 내비게이션 바 - 항목을 변경하거나 추가할 수 있습니다 -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand" href="#">한국 여행 가이드 - 10516 이상진</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item active">
+          <a class="nav-link" href="#overview">개요</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#history">역사</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#attractions">관광지</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#tips">여행 팁</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- 개요 섹션 -->
+  <section id="overview" class="section bg-primary">
+    <div class="container">
+      <h2 class="text-center">개요</h2>
+      <p>대한민국은 동남아시아에 위치한 한반도로, 다양한 먹거리, 유명한 문화유산, 재밌는 놀거리, 뛰어난 과학 기술로 유명합니다. 수도인 서울부터 다양한 지역들의 특산품까지, 한국은 전통과 문화를 중요시하는 국가입니다. </p>
+      <!-- 이미지 슬라이드 - 이미지를 변경하려면 src 속성 값을 수정하세요 -->
+      <div id="overviewCarousel" class="carousel slide" data-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <!-- 여기에 이미지 파일명을 추가하세요 -->
+            <img src="images/korea18.png" class="d-block w-100" alt="한국 개요 1">
+          </div>
+          <div class="carousel-item">
+            <!-- 여기에 이미지 파일명을 추가하세요 -->
+            <img src="images/korea2.jpg" class="d-block w-100" alt="한국 개요 2">
+          </div>
+          <div class="carousel-item">
+            <!-- 여기에 이미지 파일명을 추가하세요 -->
+            <img src="images/korea1.jpg" class="d-block w-100" alt="한국 개요 3">
+          </div>
+          <div class="carousel-item">
+            <!-- 여기에 이미지 파일명을 추가하세요 -->
+            <img src="images/korea4.jpg" class="d-block w-100" alt="한국 개요 4">
+          </div>
+          <div class="carousel-item">
+            <!-- 여기에 이미지 파일명을 추가하세요 -->
+            <img src="images/korea5.jpg" class="d-block w-100" alt="일본 개요 5">
+          </div>
+        </div>
+        <a class="carousel-control-prev" href="#overviewCarousel" role="button" data-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="sr-only">이전</span>
+        </a>
+        <a class="carousel-control-next" href="#overviewCarousel" role="button" data-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="sr-only">다음</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- 역사 섹션 -->
+  <section id="history" class="section bg-secondary">
+    <div class="container">
+      <h2 class="text-center">한국사</h2>
+      <div class="row">
+        <div class="col-md-4">
+          <div class="attraction-item">
+            <img src="images/korea6.jpg" alt="한국 역사 1" class="img-fluid">
+            <p>삼국 시대는 고구려,백제,신라 세나라로 이루어져있던 시대입니다.</p>
+            <a href="#" class="btn btn-primary btn-details" data-toggle="modal" data-target="#historyModal1">상세보기</a>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="attraction-item">
+            <img src="images/korea7.jpg" alt="한국 역사 2" class="img-fluid">
+            <p>고려 시대는 통일 신라의 경덕왕이 펼쳤던 한화정책이 본격적으로 빛을 본 시대입니다.</p>
+            <a href="#" class="btn btn-primary btn-details" data-toggle="modal" data-target="#historyModal2">상세보기</a>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="attraction-item">
+            <img src="images/korea8.jpg" alt="한국 역사 3" class="img-fluid">
+            <p>조선 시대는 태조 이성계가 위화도 회군을 일으켜 왕권을 잡고 연 시대입니다.</p>
+            <a href="#" class="btn btn-primary btn-details" data-toggle="modal" data-target="#historyModal3">상세보기</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 모달 - 역사 1 -->
+  <div class="modal fade" id="historyModal1" tabindex="-1" role="dialog" aria-labelledby="historyModalLabel1" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="historyModalLabel1">삼국 시대</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body text-center">
+          <img src="images/korea15.jpg" alt="일본 역사 1" class="img-fluid">
+          <p>신라가 기원전 57년 가장 먼저 건국되었고, 뒤이어 고구려가 기원전 37년에, 마지막으로 백제가 기원전 18년 건국되었다. 그리고 다른 국가인 가야, 옥저, 동예가 있었지만 금방 멸망했다.</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">닫기</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 모달 - 역사 2 -->
+  <div class="modal fade" id="historyModal2" tabindex="-1" role="dialog" aria-labelledby="historyModalLabel2" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="historyModalLabel2">고려 시대</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body text-center">
+          <img src="images/korea16.jpg" alt="일본 역사 2" class="img-fluid">
+          <p>태조 왕건이 삼국을 936년에 통일해서 고려 시대를 만들었고, 왕건이 나라를 세우고, 제34대 왕까지 왕계를 이었다.크게 고려 초기 / 문벌귀족기 / 무신정권기 / 원 간섭기 / 고려 말기로 나누어진다. 각각의 시대마다 지배 계층은 호족 / 문벌 귀족 / 무신 / 권문세족 / 신진 사대부로 나누어진다. </p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">닫기</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 모달 - 역사 3 -->
+  <div class="modal fade" id="historyModal3" tabindex="-1" role="dialog" aria-labelledby="historyModalLabel3" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="historyModalLabel3">조선 시대</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body text-center">
+          <img src="images/korea17.jpg" alt="일본 역사 3" class="img-fluid">
+          <p>태조 이성계가 1392년 조선을 세웠고, 제25대 왕까지 이어졌다.시기는 관학파 집권기/훈구파 집권기/사화기/권신정치기/붕당정치기/환국정치기/탕평정치기/세도정치기/개화기로 이루어졌고 이후 조선은 멸망하였다.</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">닫기</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 관광지 섹션 -->
+  <section id="attractions" class="section bg-success">
+    <div class="container">
+      <h2 class="text-center">관광지</h2>
+      <div class="row">
+        <div class="col-md-4">
+          <div class="attraction-item">
+            <img src="images/korea9.jpg" alt="한국 관광지 1" class="img-fluid">
+            <p>서울숲은 서울특별시 성동구 성수동1가에 있는 테마공원이다. 주변에 중랑천, 응봉산, 달맞이공원, 한강(성수대교), 뚝섬유원지 등이 있어 거대한 녹지를 이루고 있다.
+</p>
+            <a href="#" class="btn btn-primary btn-details" data-toggle="modal" data-target="#attractionModal1">상세보기</a>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="attraction-item">
+            <img src="images/korea10.jpg" alt="한국 관광지 2" class="img-fluid">
+            <p>서울특별시 송파구에 위치했으며, 1989년 7월 12일에 실내 테마파크 롯데월드 어드벤처가 정식으로 개장하고, 1990년 3월 24일 호수공원 매직아일랜드가 개장하면서 완전한 모습을 갖추었다.</p>
+            <a href="#" class="btn btn-primary btn-details" data-toggle="modal" data-target="#attractionModal2">상세보기</a>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="attraction-item">
+            <img src="images/korea11.jpg" alt="한국 관광지 3" class="img-fluid">
+            <p>을릉도는 경상북도 울릉군의 본섬으로, 대한민국에서 9번째로 넓은 섬이다.면적은 72.86km2이고, 인구는 약 9,000명이다.</p>
+            <a href="#" class="btn btn-primary btn-details" data-toggle="modal" data-target="#attractionModal3">상세보기</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 모달 - 관광지 1 -->
+  <div class="modal fade" id="attractionModal1" tabindex="-1" role="dialog" aria-labelledby="attractionModalLabel1" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="attractionModalLabel1">서울 숲</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body text-center">
+          <img src="images/korea14.jpg" alt="일본 관광지 1" class="img-fluid">
+          <p>경기도 과천시로 이전한 렛츠런파크 서울, 그리고 체육 공원과 골프장 등이 있던 부지를 주거 업무 지역으로 개발하려다[1] 이명박 서울특별시장의 주도로 뉴욕의 센트럴 파크나 런던의 하이드 파크 등을 본따 도심 속의 녹지로 만들었다고 한다. 약 35만 평의 부지에 약 2,352억 원의 사업비를 들여 테마공원 다섯 곳과 기타 시설들을 만들고 2005년 6월에 개장하였다.
+</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">닫기</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 모달 - 관광지 2 -->
+  <div class="modal fade" id="attractionModal2" tabindex="-1" role="dialog" aria-labelledby="attractionModalLabel2" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="attractionModalLabel2">롯데월드</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body text-center">
+          <img src="images/korea12.jpg" alt="일본 관광지 2" class="img-fluid">
+          <p>총 투자 비용은 6,500억 원이며, 운영은 롯데그룹의 계열사인 호텔롯데의 월드사업부에서 하고 있다. 서울 지하철 2호선 및 8호선 잠실역과 지하통로로 연결되어 있으며, 3번 출구 및 4번 출구를 통해서도 지상으로 접근이 가능하다. 대한민국 최대 규모의 쇼핑몰부터 시작해서 영화관, 테마파크까지 없는게 없는 곳이다.</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">닫기</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 모달 - 관광지 3 -->
+  <div class="modal fade" id="attractionModal3" tabindex="-1" role="dialog" aria-labelledby="attractionModalLabel3" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="attractionModalLabel3">을릉도(독도)</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body text-center">
+          <img src="images/korea13.jpg" alt="일본 관광지 3" class="img-fluid">
+          <p>이 섬은 동해의 바다 가운데에 위치한 화산섬으로, 섬의 중북부에 칼데라인 나리 분지가 있으며, 마지막 화산 폭발은 약 5천 년 전에 있었다.[3] 육지에서 가장 가까운 곳은 직선 거리로 130.3km로 떨어져 있는 경상북도 울진군 죽변면 죽변곶이며, 독도와는 87.4km 떨어져 있다. 뱃길로 포항에서 217km로 3시간 반이 걸리며, 동해시 묵호항에서는 170km로 2시간 50분이 걸린다.</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">닫기</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 여행 팁 섹션 -->
+  <section id="tips" class="section bg-info">
+    <div class="container">
+      <h2 class="text-center">여행 꿀팁</h2>
+      <ul>
+        <li>방문하기 좋은 시기: 봄 (3월~5월)과 가을 (9월~11월).</li>
+        <li>언어: 한국어. 1443년 창제된 훈민정음으로부터 점점 발달해 현재의 한국어가 되었다. 서울이 아닌 다른 지역에서 사투리를 사용할 수 도 있기에, 기본적인 한국어 구문을 배우면 도움이 됩니다.</li>
+        <li>통화: 한국 원 (WON).</li>
+        <li>교통: 한국은 기차, 버스, 지하철 등 광범위한 교통망을 자랑합니다. KR 패스는 여러 곳으로 여행를 가는 데에 매우 가격이 저렴하고 유용합니다.</li>
+		<li>음식: 한국은 다양한 먹거리로 유명합니다. 예를 들어, 삼겹살, 김치, 비빔밥등이 있습니다.</li>
+      </ul>
+      <div class="text-center">
+        <!-- 여기에 YouTube 동영상 링크를 추가하세요 -->
+<iframe width="560" height="315" src="https://www.youtube.com/embed/KoRT6je2Zu8?si=JlcDcjo_B8AJOJPc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>      </div>
+    </div>
+  </section>
+
+  <footer class="text-center">
+    <p>&copy; 2024 한국 여행 가이드. All rights reserved.</p>
+  </footer>
+
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+</body>
+</html>
